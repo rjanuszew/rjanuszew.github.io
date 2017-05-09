@@ -7,8 +7,11 @@
 <style>
 body {
     font-family: "Lato", sans-serif;
+    background-image: url("http://farm5.staticflickr.com/4177/33742813553_b7e8e945bc_b.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 .sidenav {
     height: 100%;
     width: 0;
@@ -21,7 +24,6 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -30,11 +32,9 @@ body {
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: -10px;
@@ -42,30 +42,25 @@ body {
     font-size: 56px;
     margin-left: 50px;
 }
-
 #main {
     transition: margin-left .5s;
     padding: 16px;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     border: 1px solid #ddd;
 }
-
 th, td {
     border: none;
     text-align: left;
     padding: 8px;
 }
-
 tr:nth-child(even){background-color: #f2f2f2}
     
 #myBtn {
@@ -82,7 +77,6 @@ tr:nth-child(even){background-color: #f2f2f2}
     padding: 15px; /* Some padding */
     border-radius: 20px; /* Rounded corners */
 }
-
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
@@ -277,6 +271,7 @@ tr:nth-child(even){background-color: #f2f2f2}
   </table>
 </div>
 
+
 <button onclick="topFunction()" id="myBtn" title="Top">Top</button>
 
 <script>
@@ -285,15 +280,12 @@ function openNav() {
     document.getElementById("main").style.marginLeft = "250px";
     
 }
-
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
-
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("myBtn").style.display = "block";
